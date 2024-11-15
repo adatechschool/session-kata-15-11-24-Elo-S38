@@ -37,14 +37,23 @@ function getLatinCharacterList(message){
     return  console.log (arrayOfChars)
 }
 
-//fonction pour traduire du latin au morse
+//fonction pour afficher l'equivalent du latin en morse
 function translateLatinCharacter(message){
-   return console.log (latinToMorse[message]);
+   return console.log (latinToMorse[message])
    }
  
+//fonction pour traduire les elements d'un tableau string en morse
+
+function encode (message){
+		for (let items of getLatinCharacterList(message) ){
+	return console.log (items += translateLatinCharacter (message))
+	}
+
+}
+	
 
 
 getLatinCharacterList("Hello world")
 translateLatinCharacter ("B")
-
+encode ("BONJOUR TOUT LE MONDE")
 
